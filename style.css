@@ -1,16 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 80px;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
-  
+  font-family: "Barlow", sans-serif;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 113px;}
+  height: 113px;
+
+  img {
+    height: 26px;
+    width: 236px;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 33px;
+
+    a {
+      text-decoration: none;
+      color: rgb(131, 136, 143);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.92px;
+    }
+  }
+}
+
+/* main */
+
+/* section first */
+
+section.first {
+  height: 450px;
+  background-image: url(./images/coffee_cup.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 134px 85px;
+
+  div.text {
+    width: 486px;
+
+    h1 {
+      font-size: 72px;
+      color: rgba(254, 252, 247, 1);
+      font-family: "Fraunces", serif;
+      font-weight: 900;
+      margin-bottom: 32px;
+    }
+
+    p {
+      color: rgba(254, 252, 247, 0.7);
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 400;
+    }
+  }
+}
+
+/* section second */
+
+section.second {
+  div.dark {
+    background-color: rgb(41, 48, 57);
+    margin-top: 177px;
+    height: 653px;
+    border-radius: 10px;
+    padding: 106px 85px;
+
+    div.children {
+      display: flex;
+      gap: 95px;
+
+      span {
+        color: rgba(253, 214, 186, 1);
+        font-family: "Fraunces", serif;
+        font-size: 72px;
+        font-weight: 900;
+        margin-top: 67px;
+        display: inline-block;
+      }
+
+      h2 {
+        color: rgba(254, 252, 247, 1);
+        font-family: "Fraunces", serif;
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 36px;
+        width: 255px;
+        margin-top: 38px;
+        margin-bottom: 43px;
+      }
+
+      p {
+        color: rgba(254, 252, 247, 0.8);
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        width: 285px;
+      }
+    }
+
+    div.line {
+      width: 760px;
+      height: 1px;
+      border: 1.5px solid rgba(253, 214, 186, 1);
+      position: relative;
+    }
+    div.circle_one,
+    div.circle_two,
+    div.circle_three {
+      width: 31px;
+      height: 31px;
+      border: 2px solid rgba(14, 135, 132, 1);
+      border-radius: 50%;
+      position: absolute;
+    }
+    div.circle_one {
+      left: 745px;
+      top: -16px;
+    }
+    div.circle_two {
+      left: 365px;
+      top: -16px;
+    }
+    div.circle_three {
+      top: -16px;
+      right: 745px;
+    }
+  }
+}
