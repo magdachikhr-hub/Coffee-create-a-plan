@@ -254,3 +254,53 @@ section.third {
     }
   }
 }
+
+/* section fourth */
+
+section.fourth {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  div.dark_card_text {
+    background-color: rgb(41, 48, 57);
+    width: 730px;
+    height: 208px;
+    padding: 27px 64px;
+
+    h4,
+    span {
+      font-family: "Fraunces", serif;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 40px;
+    }
+
+    h4 {
+      color: rgba(255, 255, 255, 1);
+      span {
+        color: rgb(14, 135, 132);
+      }
+    }
+    p {
+      color: rgb(148, 151, 156);
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+  }
+
+  button {
+    width: 217px;
+    height: 56px;
+    background-color: rgb(14, 135, 132);
+    border-radius: 6px;
+    color: rgba(254, 252, 247, 1);
+    font-size: 18px;
+    font-weight: 900;
+    font-family: "Fraunces", serif;
+    border: none;
+    margin-top: 40px;
+    margin-bottom: 168px;
+  }
+}
