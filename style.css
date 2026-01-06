@@ -23,19 +23,19 @@ header {
     height: 26px;
     width: 236px;
   }
+}
 
-  ul {
-    display: flex;
-    list-style: none;
-    gap: 33px;
+ul {
+  display: flex;
+  list-style: none;
+  gap: 33px;
 
-    a {
-      text-decoration: none;
-      color: rgb(131, 136, 143);
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 0.92px;
-    }
+  a {
+    text-decoration: none;
+    color: rgb(131, 136, 143);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.92px;
   }
 }
 
@@ -302,5 +302,24 @@ section.fourth {
     border: none;
     margin-top: 40px;
     margin-bottom: 168px;
+  }
+}
+
+/* footer */
+
+footer {
+  background-color: rgb(44 52 62);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 88px;
+  height: 120px;
+  img.footer {
+    width: 236px;
+    height: 26px;
+  }
+  div.icons {
+    display: flex;
+    gap: 24px;
   }
 }
